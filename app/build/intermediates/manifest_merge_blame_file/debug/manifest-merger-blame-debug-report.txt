@@ -5,64 +5,243 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="15"
+8        android:minSdkVersion="19"
 8-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
 9-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml
 10
-11    <application
-11-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:5:5-26:19
-12        android:allowBackup="true"
-12-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.0.1] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\core-1.0.1\AndroidManifest.xml:22:18-86
-14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:7:9-43
-16        android:label="@string/app_name"
-16-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/AppTheme" >
-20-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:11:9-40
-21        <activity android:name="com.example.snavadogru.KENDİNİDENE" />
-21-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:12:9-49
-21-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:12:19-46
-22        <activity android:name="com.example.snavadogru.TAKİP" />
-22-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:13:9-43
-22-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:13:19-40
-23        <activity android:name="com.example.snavadogru.PUAN" />
-23-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:14:9-42
-23-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:14:19-39
-24        <activity android:name="com.example.snavadogru.REHBERLİK" />
-24-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:15:9-47
-24-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:15:19-44
-25        <activity android:name="com.example.snavadogru.SORULAR" />
-25-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:16:9-45
-25-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:16:19-42
-26        <activity android:name="com.example.snavadogru.SSS" />
-26-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:17:9-41
-26-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:17:19-38
-27        <activity android:name="com.example.snavadogru.Options" />
-27-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:18:9-45
-27-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:18:19-42
-28        <activity android:name="com.example.snavadogru.MainActivity" >
-28-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:19:9-25:20
-28-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:19:19-47
-29            <intent-filter>
-29-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:20:13-24:29
-30                <action android:name="android.intent.action.MAIN" />
-30-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:21:17-69
-30-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:21:25-66
-31
-32                <category android:name="android.intent.category.LAUNCHER" />
-32-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:23:17-77
-32-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:23:27-74
-33            </intent-filter>
-34        </activity>
-35    </application>
-36
-37</manifest>
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:6:5-65
+11-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:6:22-62
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:7:5-81
+12-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:7:22-78
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:8:5-80
+13-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:8:22-77
+14
+15    <!-- Required permission for App measurement to run. -->
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:23:5-67
+16-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:23:22-64
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:24:5-79
+17-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:24:22-76
+18    <uses-permission android:name="android.permission.WAKE_LOCK" />
+18-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:25:5-68
+18-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:25:22-65
+19    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+19-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:26:5-110
+19-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:26:22-107
+20    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+20-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:26:5-82
+20-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:26:22-79
+21
+22    <application
+22-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:9:5-43:19
+23        android:allowBackup="true"
+23-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:10:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.1.0] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\f961a727fd6ff1bec6d760c391cc6822\core-1.1.0\AndroidManifest.xml:24:18-86
+25        android:debuggable="true"
+26        android:icon="@mipmap/ic_launcher"
+26-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:11:9-43
+27        android:label="@string/app_name"
+27-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:12:9-41
+28        android:roundIcon="@mipmap/ic_launcher_round"
+28-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:13:9-54
+29        android:supportsRtl="true"
+29-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:14:9-35
+30        android:testOnly="true"
+31        android:theme="@style/AppTheme" >
+31-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:15:9-40
+32        <activity android:name="com.example.snavadogru.KonuTakip.GelisimKonu" />
+32-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:16:9-68
+32-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:16:19-56
+33        <activity android:name="com.example.snavadogru.KonuTakip.aytKonu" />
+33-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:17:9-55
+33-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:17:19-52
+34        <activity android:name="com.example.snavadogru.KonuTakip.tytKonu" />
+34-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:18:9-55
+34-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:18:19-52
+35        <activity android:name="com.example.snavadogru.Camera.CameraActivity" />
+35-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:19:9-59
+35-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:19:19-56
+36        <activity android:name="com.example.snavadogru.Camera.ShowPicturesActivity" />
+36-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:20:9-65
+36-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:20:19-62
+37        <activity android:name="com.example.snavadogru.Camera.ViewImage" />
+37-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:21:9-54
+37-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:21:19-51
+38        <activity
+38-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:22:9-25:59
+39            android:name="com.example.snavadogru.KonuTakip.Konu_takip"
+39-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:23:13-49
+40            android:label="@string/title_activity_konu_takip"
+40-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:24:13-62
+41            android:theme="@style/AppTheme.NoActionBar" />
+41-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:25:13-56
+42        <activity
+42-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:26:9-29:59
+43            android:name="com.example.snavadogru.Camera.SORULAR"
+43-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:27:13-43
+44            android:label="@string/title_activity_takip_alanlari"
+44-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:28:13-66
+45            android:theme="@style/AppTheme.NoActionBar" />
+45-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:29:13-56
+46        <activity android:name="com.example.snavadogru.KENDİNİDENE" />
+46-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:30:9-49
+46-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:30:19-46
+47        <activity android:name="com.example.snavadogru.KonuTakip.Analiz" />
+47-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:31:9-54
+47-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:31:19-51
+48        <activity android:name="com.example.snavadogru.PUAN" />
+48-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:32:9-42
+48-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:32:19-39
+49        <activity android:name="com.example.snavadogru.REHBERLİK" />
+49-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:33:9-47
+49-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:33:19-44
+50        <activity android:name="com.example.snavadogru.SSS" />
+50-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:34:9-41
+50-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:34:19-38
+51        <activity android:name="com.example.snavadogru.Options" />
+51-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:35:9-45
+51-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:35:19-42
+52        <activity android:name="com.example.snavadogru.FirstScreen.MainActivity" >
+52-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:36:9-42:20
+52-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:36:19-59
+53            <intent-filter>
+53-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:37:13-41:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:38:17-69
+54-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:38:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:40:17-77
+56-->C:\Users\aspeh\Downloads\Compressed\Project\app\src\main\AndroidManifest.xml:40:27-74
+57            </intent-filter>
+58        </activity>
+59
+60        <receiver
+60-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:29:9-33:20
+61            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+61-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:30:13-85
+62            android:enabled="true"
+62-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:31:13-35
+63            android:exported="false" >
+63-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:32:13-37
+64        </receiver>
+65        <receiver
+65-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:34:9-42:20
+66            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+66-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:35:13-100
+67            android:enabled="true"
+67-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:36:13-35
+68            android:exported="true"
+68-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:37:13-36
+69            android:permission="android.permission.INSTALL_PACKAGES" >
+69-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:38:13-69
+70            <intent-filter>
+70-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:39:13-41:29
+71                <action android:name="com.android.vending.INSTALL_REFERRER" />
+71-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:40:17-79
+71-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:40:25-76
+72            </intent-filter>
+73        </receiver>
+74
+75        <service
+75-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:44:9-47:40
+76            android:name="com.google.android.gms.measurement.AppMeasurementService"
+76-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:45:13-84
+77            android:enabled="true"
+77-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:46:13-35
+78            android:exported="false" />
+78-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:47:13-37
+79        <service
+79-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:48:9-52:72
+80            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+80-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:49:13-87
+81            android:enabled="true"
+81-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:50:13-35
+82            android:exported="false"
+82-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:51:13-37
+83            android:permission="android.permission.BIND_JOB_SERVICE" />
+83-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\10ddb5a7f44298deca40fafe6f4c087b\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:52:13-69
+84        <service
+84-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\883fe3ee61da0b22067da7d7ee17f093\jetified-play-services-measurement-api-17.2.2\AndroidManifest.xml:27:9-33:19
+85            android:name="com.google.firebase.components.ComponentDiscoveryService"
+85-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\883fe3ee61da0b22067da7d7ee17f093\jetified-play-services-measurement-api-17.2.2\AndroidManifest.xml:28:13-84
+86            android:directBootAware="true"
+86-->[com.google.firebase:firebase-common:19.3.0] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\1b23a58bb1c539c2a19df1b0920c32b5\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+87            android:exported="false" >
+87-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\883fe3ee61da0b22067da7d7ee17f093\jetified-play-services-measurement-api-17.2.2\AndroidManifest.xml:29:13-37
+88            <meta-data
+88-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\883fe3ee61da0b22067da7d7ee17f093\jetified-play-services-measurement-api-17.2.2\AndroidManifest.xml:30:13-32:85
+89                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+89-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\883fe3ee61da0b22067da7d7ee17f093\jetified-play-services-measurement-api-17.2.2\AndroidManifest.xml:31:17-139
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\883fe3ee61da0b22067da7d7ee17f093\jetified-play-services-measurement-api-17.2.2\AndroidManifest.xml:32:17-82
+91            <meta-data
+91-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:32:13-34:85
+92                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+92-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:33:17-96
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:34:17-82
+94        </service>
+95
+96        <receiver
+96-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:37:9-44:20
+97            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+97-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:38:13-78
+98            android:exported="true"
+98-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:39:13-36
+99            android:permission="com.google.android.c2dm.permission.SEND" >
+99-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:40:13-73
+100            <intent-filter>
+100-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:41:13-43:29
+101                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+101-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:42:17-81
+101-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\0dbca7ef2e7fe6dd6ad20b90edf9f9bc\jetified-firebase-iid-20.0.2\AndroidManifest.xml:42:25-78
+102            </intent-filter>
+103        </receiver>
+104
+105        <provider
+105-->[com.google.firebase:firebase-common:19.3.0] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\1b23a58bb1c539c2a19df1b0920c32b5\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+106            android:name="com.google.firebase.provider.FirebaseInitProvider"
+106-->[com.google.firebase:firebase-common:19.3.0] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\1b23a58bb1c539c2a19df1b0920c32b5\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+107            android:authorities="com.example.snavadogru.firebaseinitprovider"
+107-->[com.google.firebase:firebase-common:19.3.0] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\1b23a58bb1c539c2a19df1b0920c32b5\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+108            android:exported="false"
+108-->[com.google.firebase:firebase-common:19.3.0] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\1b23a58bb1c539c2a19df1b0920c32b5\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+109            android:initOrder="100" />
+109-->[com.google.firebase:firebase-common:19.3.0] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\1b23a58bb1c539c2a19df1b0920c32b5\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+110
+111        <activity
+111-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\38b6c4b545e39be84f8fef63d737cf6b\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+112            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+112-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\38b6c4b545e39be84f8fef63d737cf6b\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+113            android:exported="false"
+113-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\38b6c4b545e39be84f8fef63d737cf6b\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+114            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+114-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\38b6c4b545e39be84f8fef63d737cf6b\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+115
+116        <meta-data
+116-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\f720b24cc490c109d50c0a0a1e6bf186\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+117            android:name="com.google.android.gms.version"
+117-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\f720b24cc490c109d50c0a0a1e6bf186\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+118            android:value="@integer/google_play_services_version" />
+118-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\f720b24cc490c109d50c0a0a1e6bf186\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+119
+120        <provider
+120-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\38d164b88494ebfa4bfd75229517e63b\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+121            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+121-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\38d164b88494ebfa4bfd75229517e63b\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+122            android:authorities="com.example.snavadogru.lifecycle-process"
+122-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\38d164b88494ebfa4bfd75229517e63b\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+123            android:exported="false"
+123-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\38d164b88494ebfa4bfd75229517e63b\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+124            android:multiprocess="true" />
+124-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\aspeh\.gradle\caches\transforms-2\files-2.1\38d164b88494ebfa4bfd75229517e63b\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+125    </application>
+126
+127</manifest>

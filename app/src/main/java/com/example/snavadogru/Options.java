@@ -7,6 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.snavadogru.Camera.SORULAR;
+import com.example.snavadogru.DenemeTakip.DenemeTakip;
+import com.example.snavadogru.KonuTakip.Konu_takip;
+import com.example.snavadogru.SoruTakip.SoruTakip;
+
 public class Options extends AppCompatActivity implements View.OnClickListener {
 Button bSSS,bRehberlik,bTakip,bSorular,bPuan,bKendiniDene;
     @Override
@@ -37,7 +42,7 @@ Button bSSS,bRehberlik,bTakip,bSorular,bPuan,bKendiniDene;
                 startActivity(ISSS);
                 break;
             case (R.id.button2) :
-                Intent ISorular = new Intent(Options.this,SORULAR.class);
+                Intent ISorular = new Intent(Options.this, SORULAR.class);
                 startActivity(ISorular);
                 break;
             case (R.id.button3) :
@@ -49,12 +54,20 @@ Button bSSS,bRehberlik,bTakip,bSorular,bPuan,bKendiniDene;
                 startActivity(IPuan);
                 break;
             case (R.id.button5) :
-                Intent ITakip = new Intent(Options.this,TAKİP.class);
-                startActivity(ITakip);
+                Intent IKonuTakip = new Intent(Options.this, Konu_takip.class);
+                startActivity(IKonuTakip);
                 break;
             case (R.id.button6) :
                 Intent IKendiniDene = new Intent(Options.this,KENDİNİDENE.class);
                 startActivity(IKendiniDene);
+                break;
+            case (R.id.button7) :
+                Intent ISoruTakip = new Intent(Options.this, SoruTakip.class);
+                startActivity(ISoruTakip);
+                break;
+            case (R.id.button8) :
+                Intent IDenemeTakip = new Intent(Options.this, DenemeTakip.class);
+                startActivity(IDenemeTakip);
                 break;
 
 
