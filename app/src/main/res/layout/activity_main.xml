@@ -40,7 +40,7 @@
             android:layout_height="74dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name"
+            android:hint="Mail"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
         <Button
