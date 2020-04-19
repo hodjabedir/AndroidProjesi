@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\Bedir\\Desktop\\x\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_takip_konu.xml.flat",
-        "source": "C:\\Users\\Bedir\\Desktop\\x\\app\\src\\main\\res\\layout\\activity_takip_konu.xml"
-    },
-    {
         "merged": "C:\\Users\\Bedir\\Desktop\\x\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Bedir\\Desktop\\x\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Bedir\\Desktop\\x\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_takip_konu.xml.flat",
+        "source": "C:\\Users\\Bedir\\Desktop\\x\\app\\src\\main\\res\\layout\\activity_takip_konu.xml"
     },
     {
         "merged": "C:\\Users\\Bedir\\Desktop\\x\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
@@ -124,6 +124,10 @@
         "source": "C:\\Users\\Bedir\\Desktop\\x\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
     },
     {
+        "merged": "C:\\Users\\Bedir\\Desktop\\x\\app\\build\\intermediates\\res\\merged\\debug\\layout_haber_ogesi.xml.flat",
+        "source": "C:\\Users\\Bedir\\Desktop\\x\\app\\src\\main\\res\\layout\\haber_ogesi.xml"
+    },
+    {
         "merged": "C:\\Users\\Bedir\\Desktop\\x\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\Bedir\\Desktop\\x\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
     },
@@ -142,6 +146,10 @@
     {
         "merged": "C:\\Users\\Bedir\\Desktop\\x\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Bedir\\Desktop\\x\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Bedir\\Desktop\\x\\app\\build\\intermediates\\res\\merged\\debug\\drawable_haber_image.jpg.flat",
+        "source": "C:\\Users\\Bedir\\Desktop\\x\\app\\src\\main\\res\\drawable\\haber_image.jpg"
     },
     {
         "merged": "C:\\Users\\Bedir\\Desktop\\x\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_puan.xml.flat",

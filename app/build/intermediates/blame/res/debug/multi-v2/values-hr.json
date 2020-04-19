@@ -4,6 +4,23 @@
             "outputFile": "C:\\Users\\Bedir\\Desktop\\x\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hr\\values-hr.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\Bedir\\.gradle\\caches\\transforms-2\\files-2.1\\1947aaebcb1291f0508fe2cb2e53b7dc\\jetified-firebase-messaging-12.0.1\\res\\values-hr\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "205",
+                        "endColumns": "99",
+                        "endOffsets": "304"
+                    },
+                    "to": {
+                        "startLines": "47",
+                        "startColumns": "4",
+                        "startOffsets": "5513",
+                        "endColumns": "103",
+                        "endOffsets": "5612"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Bedir\\.gradle\\caches\\transforms-2\\files-2.1\\38b6c4b545e39be84f8fef63d737cf6b\\jetified-play-services-base-17.0.0\\res\\values-hr\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
@@ -69,23 +86,6 @@
                         "startOffsets": "105,210,307,417,503,607,726,810,893,984,1077,1173,1267,1368,1461,1556,1655,1746,1837,1923,2027,2140,2246,2351,2464,2571,2740,5617",
                         "endColumns": "104,96,109,85,103,118,83,82,90,92,95,93,100,92,94,98,90,90,85,103,112,105,104,112,106,168,96,88",
                         "endOffsets": "205,302,412,498,602,721,805,888,979,1072,1168,1262,1363,1456,1551,1650,1741,1832,1918,2022,2135,2241,2346,2459,2566,2735,2832,5701"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Bedir\\.gradle\\caches\\transforms-2\\files-2.1\\73b5468f9cf92fcaff90019da6f490de\\jetified-firebase-messaging-12.0.1\\res\\values-hr\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "205",
-                        "endColumns": "99",
-                        "endOffsets": "304"
-                    },
-                    "to": {
-                        "startLines": "47",
-                        "startColumns": "4",
-                        "startOffsets": "5513",
-                        "endColumns": "103",
-                        "endOffsets": "5612"
                     }
                 }
             ]

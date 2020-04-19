@@ -1081,6 +1081,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable haber_image
 drawable hoca_onerisi
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1272,6 +1273,8 @@ id gone
 id grid_view
 id group_divider
 id groups
+id haber_fotosu_haber_ogesi
+id haber_title_haber_ogesi
 id home
 id homeAsUp
 id horizontal
@@ -1327,6 +1330,7 @@ id pin
 id progress_circular
 id progress_horizontal
 id radio
+id recyclerview_rehberlik
 id right
 id right_icon
 id right_side
@@ -1393,7 +1397,6 @@ id textStart
 id textView
 id textView2
 id textView3
-id textView4
 id textView5
 id textView7
 id text_input_password_toggle
@@ -1506,6 +1509,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout haber_ogesi
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action

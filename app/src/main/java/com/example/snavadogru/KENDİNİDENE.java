@@ -1,8 +1,8 @@
 package com.example.snavadogru;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class KENDİNİDENE extends AppCompatActivity {
 
@@ -11,4 +11,6 @@ public class KENDİNİDENE extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kendinidene);
     }
+
+
 }
