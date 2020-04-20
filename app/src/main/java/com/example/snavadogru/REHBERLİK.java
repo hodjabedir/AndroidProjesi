@@ -67,6 +67,7 @@ public class REHBERLİK extends AppCompatActivity {
     private void getHaberfromXml(String UrlString){
 
         try {
+
             URL url = new URL(UrlString);
             DocumentBuilderFactory dFactory = DocumentBuilderFactory.newInstance();
            DocumentBuilder dBuilder = dFactory.newDocumentBuilder();
