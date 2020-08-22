@@ -1,79 +1,96 @@
 package com.example.snavadogru;
 
+import android.content.Intent;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-
-import com.example.snavadogru.Camera.SORULAR;
+import com.example.snavadogru.Camera.CameraActivity;
 import com.example.snavadogru.DenemeTakip.DenemeTakip;
 import com.example.snavadogru.KonuTakip.Konu_takip;
 import com.example.snavadogru.SoruTakip.SoruTakip;
+import com.hitomi.cmlibrary.CircleMenu;
+import com.hitomi.cmlibrary.OnMenuSelectedListener;
 
-public class Options extends AppCompatActivity implements View.OnClickListener {
-Button bSSS,bRehberlik,bTakip,bSorular,bPuan,bKendiniDene;
+public class Options extends AppCompatActivity {
+    CircleMenu circleMenu;
+    String menu_secenekler[] = {
+            "Çözülemeyen Soru",
+            "Konu Takip",
+            "Soru Takip",
+            "Deneme Takip",
+            "Puan",
+            "Rehberlik",
+            "Kendini Dene",
+            "SSS"
+
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_options);
-        bSSS = findViewById(R.id.button1);
-        bRehberlik = findViewById(R.id.button3);
-        bTakip = findViewById(R.id.button5);
-        bSorular = findViewById(R.id.button2);
-        bPuan = findViewById(R.id.button4);
-        bKendiniDene = findViewById(R.id.button6);
-        bKendiniDene.setOnClickListener(this);
-        bPuan.setOnClickListener(this);
-        bSorular.setOnClickListener(this);
-        bTakip.setOnClickListener(this);
-        bRehberlik.setOnClickListener(this);
-        bSSS.setOnClickListener(this);
+        circleMenu = findViewById(R.id.options_circle_menu);
+        circleMenu.setMainMenu(Color.parseColor("#CDCDCD"), R.drawable.ic_ekle, R.drawable.ic_sil)
+                .addSubMenu(Color.parseColor("#258CFF"), R.drawable.profileimage)
+                .addSubMenu(Color.parseColor("#FF0000"), R.drawable.profileimage)
+                .addSubMenu(Color.parseColor("#6d4c41"), R.drawable.soru_takip_sembol)
+                .addSubMenu(Color.parseColor("#FABB05"), R.drawable.profileimage)
+                .addSubMenu(Color.parseColor("#FF0000"), R.drawable.puan_sembol)
+                .addSubMenu(Color.parseColor("#34A753"), R.drawable.profileimage)
+                .addSubMenu(Color.parseColor("#FABB05"), R.drawable.kendini_dene_sembol)
+                .addSubMenu(Color.parseColor("#FF0000"), R.drawable.profileimage)
+                .setOnMenuSelectedListener(new OnMenuSelectedListener() {
+            @Override
+            public void onMenuSelected(int index) {
+
+                Toast.makeText(Options.this, menu_secenekler[index], Toast.LENGTH_SHORT).show();
+                switch (index) {
+                        case 0:
+                            Intent camera_activity = new Intent(Options.this, CameraActivity.class);
+                            startActivity(camera_activity);
+
+                        break;
+                        case 1:
+                            Intent konu_takip = new Intent(Options.this, Konu_takip.class);
+                            startActivity(konu_takip);
+
+                        break;
+                        case 2: //sıkıntı var
+                            Intent soru_takip = new Intent(Options.this, SoruTakip.class);
+                            startActivity(soru_takip);
+
+                        break;
+                        case 3: //sıkıntı var
+                            Intent deneme_takip = new Intent(Options.this, DenemeTakip.class);
+                            startActivity(deneme_takip);
+
+                        break;
+                        case 4:
+                            Intent puan = new Intent(Options.this,PUAN.class);
+                            startActivity(puan);
+
+                        break;
+                        case 5:
+                            Intent Rehberlik = new Intent(Options.this,REHBERLİK.class);
+                            startActivity(Rehberlik);
+                        break;
+                        case 6:
+                            Intent kendini_dene = new Intent(Options.this,KENDİNİDENE.class);
+                            startActivity(kendini_dene);
+                        break;
+                        case 7:
+                            Intent Sss = new Intent(Options.this,SSS.class);
+                            startActivity(Sss);
+                        break;
+
+                }
+            }
+        });
+
 
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
 
-            case(R.id.button1):
-                Intent ISSS= new Intent(Options.this,SSS.class);
-                startActivity(ISSS);
-                break;
-            case (R.id.button2) :
-                Intent ISorular = new Intent(Options.this, SORULAR.class);
-                startActivity(ISorular);
-                break;
-            case (R.id.button3) :
-                Intent IRehberlik = new Intent(Options.this,REHBERLİK.class);
-                startActivity(IRehberlik);
-                break;
-            case (R.id.button4) :
-                Intent IPuan = new Intent(Options.this,PUAN.class);
-                startActivity(IPuan);
-                break;
-            case (R.id.button5) :
-                Intent IKonuTakip = new Intent(Options.this, Konu_takip.class);
-                startActivity(IKonuTakip);
-                break;
-            case (R.id.button6) :
-                Intent IKendiniDene = new Intent(Options.this,KENDİNİDENE.class);
-                startActivity(IKendiniDene);
-                break;
-            case (R.id.button7) :
-                Intent ISoruTakip = new Intent(Options.this, SoruTakip.class);
-                startActivity(ISoruTakip);
-                break;
-            case (R.id.button8) :
-                Intent IDenemeTakip = new Intent(Options.this, DenemeTakip.class);
-                startActivity(IDenemeTakip);
-                break;
-
-
-
-
-
-        }
-    }
 }
