@@ -7,7 +7,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.snavadogru.Camera.CameraActivity;
+import com.example.snavadogru.Camera.NewCamera;
 import com.example.snavadogru.DenemeTakip.DenemeTakip;
 import com.example.snavadogru.KonuTakip.Konu_takip;
 import com.example.snavadogru.SoruTakip.SoruTakip;
@@ -48,7 +48,7 @@ public class Options extends AppCompatActivity {
                 Toast.makeText(Options.this, menu_secenekler[index], Toast.LENGTH_SHORT).show();
                 switch (index) {
                         case 0:
-                            Intent camera_activity = new Intent(Options.this, CameraActivity.class);
+                            Intent camera_activity = new Intent(Options.this, NewCamera.class);
                             startActivity(camera_activity);
 
                         break;

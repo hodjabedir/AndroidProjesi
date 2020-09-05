@@ -1440,7 +1440,10 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_os_notification_fallback_white_24dp
 drawable ic_sil
 drawable icon_left
+drawable icon_photo_camera
+drawable icon_photo_library
 drawable icon_right
+drawable image_question
 drawable kendini_dene_sembol
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
@@ -1465,6 +1468,7 @@ drawable options_background4
 drawable options_background5
 drawable profileimage
 drawable puan_sembol
+drawable question_mark
 drawable secenek_background
 drawable soru_takip_sembol
 drawable tooltip_frame_dark
@@ -1560,6 +1564,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id bt_make_pdf_newcamera
 id bt_open
 id button
 id buttonPanel
@@ -1639,7 +1644,24 @@ id image
 id imageView
 id image_view
 id image_view2
-id imgClock
+id imv_camera_select_photo1
+id imv_camera_select_photo2
+id imv_camera_select_photo3
+id imv_camera_select_photo4
+id imv_camera_select_photo5
+id imv_camera_select_photo6
+id imv_camera_soru1
+id imv_camera_soru2
+id imv_camera_soru3
+id imv_camera_soru4
+id imv_camera_soru5
+id imv_camera_soru6
+id imv_camera_take_photo1
+id imv_camera_take_photo2
+id imv_camera_take_photo3
+id imv_camera_take_photo4
+id imv_camera_take_photo5
+id imv_camera_take_photo6
 id info
 id invisible
 id italic
@@ -1688,6 +1710,7 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
+id popup_imageview
 id progress_circular
 id progress_horizontal
 id radio
@@ -1840,6 +1863,7 @@ layout activity_camera
 layout activity_fragment_example
 layout activity_kendinidene
 layout activity_main
+layout activity_new_camera
 layout activity_options
 layout activity_puan
 layout activity_rehberlik
@@ -1890,6 +1914,7 @@ layout notification_template_part_chronometer
 layout notification_template_part_time
 layout onesignal_bgimage_notif_layout
 layout options_deneme
+layout popup_camera
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
